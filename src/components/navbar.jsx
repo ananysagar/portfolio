@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setShowDropdown(!showDropdown);
-  }
+  };
 
   return (
     <>
@@ -36,9 +36,12 @@ const Navbar = () => {
             <RxHamburgerMenu className="hamburger-menu" />
           )}
         </div>
-        <div className="dropdown-icons">
-            <IoMdCloseCircle className="dropdown-close-icon"/>
-            <RxHamburgerMenu className="dropdown-hamburger-icon"/>
+        <div className="dropdown-icons" onClick={toggleDropdown}>
+          {showDropdown ? (
+            <IoMdCloseCircle className="dropdown-close-icon" />
+          ) : (
+            <RxHamburgerMenu className="dropdown-hamburger-icon" />
+          )}
         </div>
       </div>
       <div className={`sidebar ${showSidebar ? "show" : ""}`}>
@@ -57,8 +60,16 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="dropdown">
-          
+      <div className={`dropdown ${showDropdown ? "show" : ""}`}>
+        <div className="dropdown-menu-items">
+          <ul>
+            <li>About Me</li>
+            <li>Experience</li>
+            <li>Projects</li>
+            <li>Blogs</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
       </div>
     </>
   );
