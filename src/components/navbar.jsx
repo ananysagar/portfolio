@@ -21,12 +21,25 @@ const Navbar = () => {
           <span>.</span>
         </div>
         <div className="right-navbar">
-          <ul>
-            <li>About Me</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Blogs</li>
-            <li>Contacts</li>
+        <ul>
+            <li>
+              <a href="#home" className="active">Home</a>
+            </li>
+            <li>
+              <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#project">Projects</a>
+            </li>
+            <li>
+              <a href="#blogs">Blogs</a>
+            </li>
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
           </ul>
         </div>
         <div className="hamburger-icons" onClick={toggleSidebar}>
@@ -50,24 +63,50 @@ const Navbar = () => {
         </div>
         <div className="sidebar-menu">
           <div className="sidebar-menu-items">
-            <ul>
-              <li>About Me</li>
-              <li>Experience</li>
-              <li>Projects</li>
-              <li>Blogs</li>
-              <li>Contacts</li>
-            </ul>
+          <ul>
+            <li>
+              <a href="#home" className="active">Home</a>
+            </li>
+            <li>
+              <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#project">Projects</a>
+            </li>
+            <li>
+              <a href="#blogs">Blogs</a>
+            </li>
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+          </ul>
           </div>
         </div>
       </div>
       <div className={`dropdown ${showDropdown ? "show" : ""}`}>
         <div className="dropdown-menu-items">
           <ul>
-            <li>About Me</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Blogs</li>
-            <li>Contacts</li>
+            <li>
+              <a href="#home" className="active">Home</a>
+            </li>
+            <li>
+              <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#project">Projects</a>
+            </li>
+            <li>
+              <a href="#blogs">Blogs</a>
+            </li>
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
           </ul>
         </div>
       </div>
