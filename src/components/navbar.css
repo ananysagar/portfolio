@@ -20,7 +20,7 @@
     font-weight: 700;
 }
 .left-navbar span {
-    color: red;
+    color: rgb(246, 2, 2);
     padding-left: 7px;
     font-size: 55px;
 }
@@ -57,7 +57,7 @@
     right: -270px;
     width: 270px;
     height: 100vh;
-    background: #851111;
+    background: #232121;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -94,8 +94,7 @@
 .sidebar-menu-items ul li:hover {
     transform: translateX(5px); /* Move the item slightly to the right on hover */
     color: #fff; /* Change text color on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 0 0 10px rgb(246, 2, 2); 
 }
 
 .dropdown-icons {
@@ -114,11 +113,11 @@
 }
 .dropdown {
     width: 100%;
-    height: 200px;
+    height: 350px;
     background: #232121;
     color: #fff;
     position: absolute;
-    top: -280px;
+    top: -430px;
     display: flex;
     flex-direction: column;
     transition: top 0.3s ease;
@@ -126,11 +125,38 @@
 .dropdown.show {
     top: 80px;
 }
-
+.dropdown-menu-items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    list-style: none;
+    text-transform: uppercase;
+}
+.dropdown-menu-items ul li{
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.dropdown-menu-items ul li:hover {
+    transform: translateY(5px); /* Move the item slightly to the right on hover */
+    color: #fff; /* Change text color on hover */
+    box-shadow: 0 0 10px rgb(246, 2, 2);
+}
 
 
 
 /* --------media query ---------*/
+@media only screen and (min-width: 900px) {
+    .dropdown{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .right-navbar{
         display: none;
@@ -154,6 +180,9 @@
         display: none;
     }
     .hamburger-icons {
+        display: none;
+    }
+    .sidebar{
         display: none;
     }
 }
