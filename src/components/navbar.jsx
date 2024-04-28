@@ -4,12 +4,15 @@ import { IoMdCloseCircle } from "react-icons/io";
 import "./navbar.css";
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
-
+  const [showDropdown, setShowDropdown] = useState(false);
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
-    //console.log("Menu is clicked");
   };
-  
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  }
+
   return (
     <>
       <div className="navbar">
@@ -28,19 +31,34 @@ const Navbar = () => {
         </div>
         <div className="hamburger-icons" onClick={toggleSidebar}>
           {showSidebar ? (
-            <IoMdCloseCircle className="close-icon"/>
+            <IoMdCloseCircle className="close-icon" />
           ) : (
-            <RxHamburgerMenu className="hamburger-menu"/>
-          )}  
+            <RxHamburgerMenu className="hamburger-menu" />
+          )}
+        </div>
+        <div className="dropdown-icons">
+            <IoMdCloseCircle className="dropdown-close-icon"/>
+            <RxHamburgerMenu className="dropdown-hamburger-icon"/>
         </div>
       </div>
-      <div className={`sidebar ${showSidebar ? 'show' : ''}`}>
+      <div className={`sidebar ${showSidebar ? "show" : ""}`}>
         <div className="close-btn" onClick={toggleSidebar}>
-          <IoMdCloseCircle className="close-icon"/>
+          <IoMdCloseCircle className="close-icon" />
         </div>
         <div className="sidebar-menu">
-          Sidebar Contents
+          <div className="sidebar-menu-items">
+            <ul>
+              <li>About Me</li>
+              <li>Experience</li>
+              <li>Projects</li>
+              <li>Blogs</li>
+              <li>Contacts</li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div className="dropdown">
+          
       </div>
     </>
   );
