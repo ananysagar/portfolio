@@ -10,3 +10,10 @@
 body {
   margin: 0;
 }
+section {
+  width: 100%;
+  min-height: 100vh;
+  background: #edeaea;
+  color: #fff;
+
+}

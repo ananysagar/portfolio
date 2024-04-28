@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdCloseCircle } from "react-icons/io";
 import "./navbar.css";
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
@@ -13,17 +14,34 @@ const Navbar = () => {
     setShowDropdown(!showDropdown);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="navbar">
+      <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="left-navbar">
           <div className="logo">A Sagar</div>
           <span>.</span>
         </div>
         <div className="right-navbar">
-        <ul>
+          <ul>
             <li>
-              <a href="#home" className="active">Home</a>
+              <a href="#home" className="active">
+                Home
+              </a>
             </li>
             <li>
               <a href="#aboutme">About Me</a>
@@ -63,26 +81,28 @@ const Navbar = () => {
         </div>
         <div className="sidebar-menu">
           <div className="sidebar-menu-items">
-          <ul>
-            <li>
-              <a href="#home" className="active">Home</a>
-            </li>
-            <li>
-              <a href="#aboutme">About Me</a>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#project">Projects</a>
-            </li>
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-            <li>
-              <a href="#contacts">Contacts</a>
-            </li>
-          </ul>
+            <ul>
+              <li>
+                <a href="#home" className="active">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#aboutme">About Me</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#project">Projects</a>
+              </li>
+              <li>
+                <a href="#blogs">Blogs</a>
+              </li>
+              <li>
+                <a href="#contacts">Contacts</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -90,7 +110,9 @@ const Navbar = () => {
         <div className="dropdown-menu-items">
           <ul>
             <li>
-              <a href="#home" className="active">Home</a>
+              <a href="#home" className="active">
+                Home
+              </a>
             </li>
             <li>
               <a href="#aboutme">About Me</a>
