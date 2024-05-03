@@ -1,67 +1,64 @@
 .home {
-    display: flex;
-    padding-top: 50px;
-    padding-left: 35px;
-    overflow: hidden;
-    justify-content: space-between;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 35px;
+  overflow: hidden;
+  justify-content: space-between;
 }
- .socials {
-    display: flex;
-    flex-direction: column;
-    padding-top: 180px;
-    padding-left: 30px;
-    gap: 40px;
+.socials {
+  display: flex;
+  flex-direction: column;
+  padding-top: 180px;
+  padding-left: 30px;
+  gap: 40px;
 }
 .icons {
-    font-size: 30px;
-    color: black;
-    cursor: pointer;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
 }
 .icons:hover {
-    color: rgb(43, 42, 42);
+  color: rgb(43, 42, 42);
 }
 
 .short-intro {
-    display: flex;
-    flex-direction: column;
-    padding-left: 180px;
-    align-items: center;
-    min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 180px;
+  align-items: center;
+  min-width: 40%;
 }
 .short-intro h1 {
-    font-size: 80px;
-    margin-bottom: 0;
+  font-size: 80px;
+  margin-bottom: 0;
 }
 .designation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-top: -30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: -30px;
 }
 .horizontal-line {
-    width: 110px;
-    height: 1px;
-    background-color: black;
+  width: 110px;
+  height: 1px;
+  background-color: black;
 }
 .designation h4 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
 }
-.short-intro p{
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    color: #000000;
+.short-intro p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #000000;
 }
-
 
 .my-pic {
-    
-    padding: 120px 150px 0 120px;
-    
+  padding: 120px 150px 0 120px;
 }
-.my-pic  img {
-    border-radius: 50%;
-    border: none;
+.my-pic img {
+  border-radius: 50%;
+  border: none;
 }
