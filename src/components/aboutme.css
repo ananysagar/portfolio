@@ -1,0 +1,32 @@
+.aboutme {
+    padding: 0;
+    margin: 0;
+}
+.aboutme h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: Mukta;
+}
+.aboutme-section {
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+}
+.secondPic {
+    padding-left: 25px;
+    flex: 1;
+}
+.secondPic img {
+    border-radius: 10%;
+}
+.personal-info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+}
+.my-bio {
+    display: flex;
+}
