@@ -29,7 +29,7 @@ const Home = () => {
         </p>
       </div>
       <div className="my-pic">
-        <img src={image} alt="" width='300px'/>
+        <img src={image} alt="" width='350px'/>
       </div>
     </div>
   );

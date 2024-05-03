@@ -3,8 +3,9 @@
     padding-top: 50px;
     padding-left: 35px;
     overflow: hidden;
+    justify-content: space-between;
 }
-.socials {
+ .socials {
     display: flex;
     flex-direction: column;
     padding-top: 180px;
@@ -39,27 +40,26 @@
     margin-top: -30px;
 }
 .horizontal-line {
-    width: 130px;
+    width: 110px;
     height: 1px;
     background-color: black;
 }
 .designation h4 {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: #000000;
 }
 .short-intro p{
     word-wrap: break-word;
     overflow-wrap: break-word;
-    
     color: #000000;
 }
 
 
 .my-pic {
-    min-width: 40%;
-    padding-top: 120px;
-    padding-left: 180px;
+    
+    padding: 120px 150px 0 120px;
+    
 }
 .my-pic  img {
     border-radius: 50%;
