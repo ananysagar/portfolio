@@ -16,19 +16,19 @@ const Aboutme = () => {
           <div className="my-bio">
             <div className="experience">
               <div className="edu-icon">
-                <FaLaptopCode />
+                <FaLaptopCode className="icon" />
               </div>
-              <h3>Experience</h3>
-              <h5>3.6+ years</h5>
-              <h5>Frontend Development</h5>
+              <h3 className="heading1">Experience</h3>
+              <h5 className="heading2">3.6+ years</h5>
+              <h6 className="heading3">Frontend Development</h6>
             </div>
             <div className="education">
               <div className="exp-icon">
-                <IoSchoolSharp />
+                <IoSchoolSharp className="icon" />
               </div>
-              <h3>Education</h3>
-              <h5>Bachelor of Engineering</h5>
-              <h6>Information Science</h6>
+              <h3 className="heading1">Education</h3>
+              <h5 className="heading2">Bachelor of Engineering</h5>
+              <h6 className="heading3">Information Science</h6>
             </div>
           </div>
           <div className="my-intro">
