@@ -38,6 +38,11 @@ const Aboutme = () => {
               we n
             </p>
           </div>
+          <div className="cv-btn-wrapper">
+            <div className="cv-btn">
+              <button>Download CV</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
