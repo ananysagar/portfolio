@@ -8,7 +8,7 @@ function App() {
       <Navbar/>
       <section id="home"><Home /></section>
       <section id="aboutme"><Aboutme /></section>
-      <section id="experience">Experiences</section>
+      <section id="skills">Skills</section>
       <section id="project">Projects</section>
       <section id="blogs">Blogs</section>
       <section id="contacts">Contact</section>
