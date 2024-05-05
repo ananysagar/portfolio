@@ -1,0 +1,17 @@
+.skills {
+    width: 100%;
+}
+.skill-section {
+    padding-left: 50px;
+    margin-top: -5%;
+    align-items: center;
+    text-align: center;
+}
+.skill-header h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.skills-icon {
+    padding-top: 15px;
+}
