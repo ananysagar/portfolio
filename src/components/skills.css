@@ -1,5 +1,6 @@
 .skills {
     width: 100%;
+    overflow: hidden;
 }
 .skill-section {
     padding-left: 50px;
@@ -14,4 +15,21 @@
 
 .skills-icon {
     padding-top: 15px;
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.first-row img, .second-row img, .third-row img {
+    padding: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.fourth-row img {
+    padding: 0 18px;
+    transition: transform 0.3s ease-in-out;
+}
+.first-row img:hover, .second-row img:hover, .third-row img:hover, .fourth-row img:hover {
+    transform: scale(1.1);
 }

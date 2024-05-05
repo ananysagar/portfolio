@@ -1,8 +1,9 @@
 import React from "react";
 import yup from "../assets/yup-validation.png";
+import './skills.css'
 const SkillsIcon = () => {
   return (
-    <>
+    <div className="my-skills">
       <div className="first-row">
         <img
           width="100px"
@@ -184,9 +185,9 @@ const SkillsIcon = () => {
           alt=""
           src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg"
         />
-        <img src={yup} width="100px" alt="" />
+        <img src={yup} width="120px" alt="" />
       </div>
-    </>
+    </div>
   );
 };
 
