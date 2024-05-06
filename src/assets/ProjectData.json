@@ -1,0 +1,29 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project 1",
+        "screenshot": "project1_screenshot.png",
+        "skills": ["React", "JavaScript", "HTML", "CSS"],
+        "githubLink": "https://github.com/yourusername/project1",
+        "demoLink": "https://project1demo.com"
+      },
+      {
+        "id": 2,
+        "title": "Project 2",
+        "screenshot": "project2_screenshot.png",
+        "skills": ["React", "Node.js", "Express", "MongoDB"],
+        "githubLink": "https://github.com/yourusername/project2",
+        "demoLink": "https://project2demo.com"
+      },
+      {
+        "id": 3,
+        "title": "Project 3",
+        "screenshot": "project3_screenshot.png",
+        "skills": ["React", "Firebase", "Material-UI"],
+        "githubLink": "https://github.com/yourusername/project3",
+        "demoLink": "https://project3demo.com"
+      }
+    ]
+  }
+  
