@@ -1,0 +1,19 @@
+.project-section {
+  margin: 80px;
+}
+
+.project-header {
+  text-align: center;
+}
+.project-header h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.project-cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
