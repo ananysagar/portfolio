@@ -27,6 +27,20 @@
   height: auto;
 }
 
+.contact-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+}
+.contact-detail h1 {
+  font-size: 34px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-detail p{
+  font-size: 15px;
+  margin-top: 0;
+}
 .form {
   display: flex;
   flex-direction: column;
