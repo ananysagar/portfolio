@@ -1,5 +1,8 @@
 import React from "react";
 import "./contactus.css";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const ContactUs = () => {
   return (
@@ -51,6 +54,16 @@ const ContactUs = () => {
 
               <button className="send-btn">Send</button>
             </form>
+          </div>
+        </div>
+        <div className="footer-msg">
+          <div className="social">
+            <FaGithub className="footer-icons" />
+            <FaLinkedin className="footer-icons" />
+            <FaXTwitter className="footer-icons" />
+          </div>
+          <div className="copyright-msg">
+            <p>Copyright © 2024 Anany Sagar. All rights reserved.</p>
           </div>
         </div>
       </div>
