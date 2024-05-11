@@ -15,10 +15,10 @@ const ContactUs = () => {
           <div className="contact-detail">
             <h1>Get in touch</h1>
             <p>
-              <span>Email:</span> sagaranany577@gmail.com
+              <span>Email: </span>sagaranany577@gmail.com
             </p>
             <p>
-              <span>Phone:</span> +91 8310499491
+              <span>Phone: </span>+91 8310499491
             </p>
           </div>
           <div className="contact-form">
