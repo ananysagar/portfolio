@@ -37,22 +37,21 @@
   margin-top: -5%;
 }
 .blog-title {
-    color: #fff;
+  color: #fff;
 }
 .blog-tags {
   display: flex;
   gap: 5px;
   justify-content: center;
   margin-top: -38px;
-
 }
 
 .blog-desc {
-    width: auto;
-    margin-top: -25px;
+  width: auto;
+  margin-top: -25px;
 }
 .blog-desc p {
-    text-align: left;
-    color: #fff;
-    font-size: 13px;
+  text-align: left;
+  color: #fff;
+  font-size: 13px;
 }

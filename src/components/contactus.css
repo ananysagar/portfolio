@@ -1,11 +1,10 @@
 .contact {
   background: #000;
   color: #fff;
-  min-height: 90vh; /* Minimum height of the container */
+  max-height: 100vh; /* Minimum height of the container */
   position: relative;
   left: 0;
   bottom: 0;
-  width: 100%;
 }
 
 .contact-section {
