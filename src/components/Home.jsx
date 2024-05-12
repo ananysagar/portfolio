@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-
+import { Link } from "react-router-dom";
 // ** icons import
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -10,18 +10,18 @@ const Home = () => {
   return (
     <div className="home">
       <div className="socials">
-        <a href="www.github.com/ananysagar" className="icons github-icon">
+        <Link to="https://github.com/ananysagar" target="_blank" className="icons github-icon">
           <FaGithub />
-        </a>
-        <a
-          href="www.linkedin.com/in/ananysagar"
+        </Link>
+        <Link
+          to="https://linkedin.com/in/ananysagar" target="_blank"
           className="icons linkedin-icon"
         >
           <FaLinkedin />
-        </a>
-        <a href="www.x.com/ananysagar" className="icons twitter-icon">
+        </Link>
+        <Link to="https://x.com/ananysagar" target="_blank" className="icons twitter-icon">
           <FaXTwitter />
-        </a>
+        </Link>
       </div>
       <div className="short-intro">
         <h1>Anany Sagar</h1>

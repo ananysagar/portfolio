@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./contactus.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -58,9 +60,27 @@ const ContactUs = () => {
         </div>
         <div className="footer-msg">
           <div className="social">
-            <FaGithub className="footer-icons" />
-            <FaLinkedin className="footer-icons" />
-            <FaXTwitter className="footer-icons" />
+            <Link
+              to="https://github.com/ananysagar"
+              target="_blank"
+              className="footer-icons"
+            >
+              <FaGithub />
+            </Link>
+            <Link
+              to="https://linkedin.com/in/ananysagar"
+              target="_blank"
+              className="footer-icons"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              to="https://x.com/ananysagar"
+              target="_blank"
+              className="footer-icons"
+            >
+              <FaXTwitter />
+            </Link>
           </div>
           <div className="copyright-msg">
             <p>Copyright © 2024 Anany Sagar. All rights reserved.</p>
