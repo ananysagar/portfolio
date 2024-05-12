@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutme.css";
 import image from "../images/image.jpg";
+//import resume from '../images/resume.jpeg';
 import { FaLaptopCode } from "react-icons/fa";
 import { IoSchoolSharp } from "react-icons/io5";
 
@@ -40,7 +41,7 @@ const Aboutme = () => {
           </div>
           <div className="cv-btn-wrapper">
             <div className="cv-btn">
-              <button>Download CV</button>
+              <a href='' /*download={resume}*/><button>Download CV</button></a>
             </div>
           </div>
         </div>

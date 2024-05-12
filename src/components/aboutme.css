@@ -11,11 +11,11 @@
 }
 .aboutme-section {
     display: flex;
-    padding: 50px 100px 80px;
+    padding: 50px 100px 50px 0 ;
     align-items: center;
 }
 .secondPic {
-    padding-left: 25px;
+    padding-left: 150px;
     flex: 1;
 }
 .secondPic img {
@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     margin-top: -4%;
-    padding-left: 150px;
+    padding-left: 80px;
     padding-right: 50px;
 }
 .my-bio {
@@ -87,4 +87,49 @@
 }
 .cv-btn button:hover {
     background-color: #ff5959;
-} 
+}
+
+/* --------media query ---------*/
+
+@media only screen and (max-width: 1072px) {
+    .secondPic {
+        padding-left: 60px;
+        flex: 1;
+    }
+    .secondPic img {
+        width: 300px;
+        height: 300px;
+    }
+    .personal-info{
+        flex: 2;
+        margin-top: -4%;
+        padding-left: 30px;
+        
+    }
+}
+@media only screen and (max-width: 900px) {
+    .aboutme-section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .secondPic img {
+        width: 240px;
+        height: 240px;
+    }
+    .personal-info{
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .my-bio {
+        margin: 25px 0;
+    }
+    .experience, .education {
+        margin: 0 15px;
+        padding: 13px;
+        max-width: 150px;
+        width: 150px;
+        
+    }
+}
