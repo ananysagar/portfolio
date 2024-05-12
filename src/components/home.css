@@ -1,14 +1,14 @@
 .home {
   display: flex;
-  padding-top: 50px;
-  padding-left: 35px;
+  padding-top: 40px;
   overflow: hidden;
-  justify-content: space-between;
+  margin-bottom: 15px;
 }
+
 .socials {
   display: flex;
   flex-direction: column;
-  padding-top: 180px;
+  padding-top: 140px;
   padding-left: 30px;
   gap: 40px;
 }
@@ -57,7 +57,7 @@
 }
 
 .my-pic {
-  padding: 120px 150px 0 120px;
+  padding: 60px 150px 0 120px;
 }
 .my-pic img {
   border-radius: 50%;

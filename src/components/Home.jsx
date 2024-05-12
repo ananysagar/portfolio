@@ -9,7 +9,7 @@ import image from "../images/image.jpg";
 const Home = () => {
   return (
     <div className="home">
-      <div className="socials">
+      <div className="socials item">
         <Link to="https://github.com/ananysagar" target="_blank" className="icons github-icon">
           <FaGithub />
         </Link>
@@ -23,7 +23,7 @@ const Home = () => {
           <FaXTwitter />
         </Link>
       </div>
-      <div className="short-intro">
+      <div className="short-intro item">
         <h1>Anany Sagar</h1>
         <div className="designation">
           <span className="horizontal-line"></span>
@@ -39,7 +39,7 @@ const Home = () => {
           about my work.
         </p>
       </div>
-      <div className="my-pic">
+      <div className="my-pic item">
         <img src={image} alt="" width="350px" />
       </div>
     </div>
