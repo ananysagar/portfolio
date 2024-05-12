@@ -11,7 +11,7 @@ body {
 }
 section {
   max-width: 1250px;
-  min-height: 90vh;
+  max-height: 150vh;
   background: #ffffff;
   color: #000000;
   margin: auto;
