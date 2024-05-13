@@ -60,13 +60,14 @@
 
 .my-intro {
     display: flex;
-    padding-left: 30px;
+    align-items: center;
 }
 .my-intro, p {
     font-size: 15px;
     font-family: 'Nunito Sans';
     font-weight: 400;
     color: #7a7a7a;
+    text-align: center;
 }
 .cv-btn-wrapper {
     padding-left: 30px;
