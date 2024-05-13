@@ -1,7 +1,7 @@
 .contact {
   background: #000;
   color: #fff;
-  max-height: 130vh; 
+  min-height: 80vh;
   left: 0;
   bottom: 0;
 }
@@ -35,7 +35,7 @@
   font-weight: 300;
   color: #fff;
 }
-.contact-detail p{
+.contact-detail p {
   font-size: 15px;
   margin-top: 0;
 }
@@ -58,7 +58,7 @@
 }
 .msg-area textArea {
   width: calc(100% - 30px);
-  height: 150px;
+  min-height: 80px;
   padding: 10px 15px;
   color: #fff;
   background: #000;
@@ -90,7 +90,7 @@
   transition: transform 0.3s ease-in-out;
   color: #fff;
 }
-.footer-icons:hover{
+.footer-icons:hover {
   transform: scale(1.3);
   color: #fff;
 }
@@ -99,4 +99,58 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* --------media query ---------*/
+@media only screen and (max-width: 900px) {
+  .contact-section {
+    margin: 80px 20px 0 20px;
+  }
+  .copyright-msg p {
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+  }
+  .contact-detail {
+    padding: 0;
+    margin-top: -25px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact-detail h1 {
+    font-size: 27px;
+    font-weight: 300;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .name input,
+  .email input {
+    width: 100%;
+  }
+  .msg-area textArea {
+    width: 100%;
+    min-height: 100px;
+  }
+  .send-btn {
+    width: 35%;
+  }
+  .copyright-msg p {
+    white-space: nowrap;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact {
+    min-height: 40vh;
+    height: 580px;
+  }
 }

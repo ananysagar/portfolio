@@ -53,7 +53,6 @@ const ContactUs = () => {
                   required
                 />
               </div>
-
               <button className="send-btn">Send</button>
             </form>
           </div>
