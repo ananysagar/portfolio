@@ -1,7 +1,7 @@
 .card-box {
   padding: 10px;
   width: 280px;
-  height: 360px;
+  min-height: 360px;
   border: 1px solid #000;
   box-sizing: border-box;
   text-align: center;
@@ -40,7 +40,7 @@
   display: flex;
   gap: 20px;
   justify-content: center;
-  padding-top: 5px;
+  padding: 5px 0 15px 0;
 }
 .card-btn button {
   width: auto;
@@ -49,10 +49,10 @@
   color: #fff;
   border-radius: 20px;
   border: none;
-  background: red;
+  background: orangered;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
 .card-btn button:hover {
-  background-color: #ff5959;
+  background-color: #a10c0c;
 }
