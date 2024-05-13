@@ -1,6 +1,7 @@
 import React from "react";
 import "./project.css";
 import Card from "./Card";
+import data from "../assets/ProjectData.json";
 const Project = () => {
   return (
     <div className="project">
@@ -9,12 +10,9 @@ const Project = () => {
           <h1>Projects</h1>
         </div>
         <div className="project-cards">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {data.projects.map((project) => {
+            return <Card key={project.id} project={project} />;
+          })}
         </div>
       </div>
     </div>
