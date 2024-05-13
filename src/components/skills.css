@@ -40,4 +40,38 @@
 /* --------media query ---------*/
 
 @media only screen and (max-width: 1072px) {
+  .my-skills {
+    gap: 20px;
+  }
+  .first-row img,
+  .second-row img,
+  .third-row img,
+  .fourth-row img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .my-skills {
+    gap: 15px;
+  }
+  .first-row img,
+  .second-row img,
+  .third-row img,
+  .fourth-row img {
+    width: 48px;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .my-skills {
+    gap: 10px;
+  }
+  .first-row img,
+  .second-row img,
+  .third-row img,
+  .fourth-row img {
+    width: 53px;
+    padding: 15px 20px;
+  }
 }
