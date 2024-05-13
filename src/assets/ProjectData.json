@@ -1,29 +1,20 @@
 {
-    "projects": [
-      {
-        "id": 1,
-        "title": "Project 1",
-        "screenshot": "project1_screenshot.png",
-        "skills": ["React", "JavaScript", "HTML", "CSS"],
-        "githubLink": "https://github.com/yourusername/project1",
-        "demoLink": "https://project1demo.com"
-      },
-      {
-        "id": 2,
-        "title": "Project 2",
-        "screenshot": "project2_screenshot.png",
-        "skills": ["React", "Node.js", "Express", "MongoDB"],
-        "githubLink": "https://github.com/yourusername/project2",
-        "demoLink": "https://project2demo.com"
-      },
-      {
-        "id": 3,
-        "title": "Project 3",
-        "screenshot": "project3_screenshot.png",
-        "skills": ["React", "Firebase", "Material-UI"],
-        "githubLink": "https://github.com/yourusername/project3",
-        "demoLink": "https://project3demo.com"
-      }
-    ]
-  }
-  
+  "projects": [
+    {
+      "id": 1,
+      "title": "Admin Dashboard",
+      "screenshot": "admin-dashboard.png",
+      "skills": ["React","CSS"],
+      "githubLink": "https://github.com/ananysagar/React-Admin-Dashboard",
+      "demoLink": "https://react-admin-dashboard-six-zeta.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "GOT Character Search App",
+      "screenshot": "got-characters.png",
+      "skills": ["React", "Axios", "CSS"],
+      "githubLink": "https://github.com/ananysagar/GOT-Characters",
+      "demoLink": "https://got-characters-xi.vercel.app/"
+    }
+  ]
+}
