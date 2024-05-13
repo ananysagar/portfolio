@@ -1,35 +1,43 @@
 .skills {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 .skill-section {
-    padding-left: 50px;
-    margin-top: -5%;
-    align-items: center;
-    text-align: center;
+  margin-top: -5%;
+  text-align: center;
 }
-.skill-header h1{
-    font-size: 50px;
-    font-weight: 500;
+.skill-header h1 {
+  font-size: 50px;
+  font-weight: 500;
 }
 
 .skills-icon {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 .my-skills {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.first-row img, .second-row img, .third-row img {
-    padding: 0 20px;
-    transition: transform 0.3s ease-in-out;
+.first-row img,
+.second-row img,
+.third-row img {
+  padding: 0 20px;
+  transition: transform 0.3s ease-in-out;
 }
 .fourth-row img {
-    padding: 0 18px;
-    transition: transform 0.3s ease-in-out;
+  padding: 0 18px;
+  transition: transform 0.3s ease-in-out;
 }
-.first-row img:hover, .second-row img:hover, .third-row img:hover, .fourth-row img:hover {
-    transform: scale(1.1);
+.first-row img:hover,
+.second-row img:hover,
+.third-row img:hover,
+.fourth-row img:hover {
+  transform: scale(1.1);
+}
+
+/* --------media query ---------*/
+
+@media only screen and (max-width: 1072px) {
 }
