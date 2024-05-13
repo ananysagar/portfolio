@@ -19,7 +19,9 @@ body {
   margin: auto;
 }
 
-#project, #blogs, #contacts {
+#project,
+#blogs,
+#contacts {
   max-width: 1250px;
   margin: auto;
   background: #ffffff;

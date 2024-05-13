@@ -1,6 +1,8 @@
 import React from "react";
 import "./blogs.css";
 import BlogCard from "./BlogCard";
+import BlogData from "../assets/BlogData";
+
 const Blogs = () => {
   return (
     <div className="blogs">
@@ -9,12 +11,9 @@ const Blogs = () => {
           <h1>Blogs</h1>
         </div>
         <div className="blog-cards">
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+          {BlogData.map((blog) => {
+            return <BlogCard key={blog.id} blog={blog} />;
+          })}
         </div>
       </div>
     </div>
