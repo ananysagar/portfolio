@@ -38,7 +38,30 @@
 }
 
 /* --------media query ---------*/
+@media only screen and (max-width: 1072px) {
+  .my-skills {
+    gap: 20px;
+  }
 
+  .first-row img,
+  .second-row img,
+  .third-row img,
+  .fourth-row img {
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .my-skills {
+    gap: 20px;
+  }
+  
+  .first-row img,
+  .second-row img,
+  .third-row img,
+  .fourth-row img {
+    width: 60px;
+  }
+}
 @media only screen and (max-width: 1072px) {
   .my-skills {
     gap: 20px;
@@ -53,7 +76,7 @@
 
 @media only screen and (max-width: 900px) {
   .my-skills {
-    gap: 15px;
+    gap: 5px;
   }
   .first-row img,
   .second-row img,
@@ -71,7 +94,7 @@
   .second-row img,
   .third-row img,
   .fourth-row img {
-    width: 53px;
+    width: 35px;
     padding: 15px 20px;
   }
 }
