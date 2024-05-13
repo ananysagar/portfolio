@@ -38,6 +38,10 @@
 .contact-detail p {
   font-size: 15px;
   margin-top: 0;
+  text-align: left;
+}
+.contact-detail p span {
+  font-weight: bold;
 }
 .form {
   display: flex;
