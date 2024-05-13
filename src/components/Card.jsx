@@ -1,22 +1,33 @@
 import React from "react";
 import "./card.css";
-import admin from '../images/admin-dashboard.png'
-const Card = () => {
+
+const Card = ({ project }) => {
+  
   return (
     <div className="card">
       <div className="card-box">
-        <img src={admin} alt="" />
+        <div>
+          <img
+            src={project.screenshot}
+            alt=""
+          />
+        </div>
         <div className="container">
           <div className="title">
-            <h2>My Portfolio</h2>
+            <h2>{project.title}</h2>
           </div>
           <div className="skills-used">
-            <p>React</p>
-            <p>CSS</p>
+            {project.skills.map((skill, index) => {
+              return <p key={index}>{skill}</p>;
+            })}
           </div>
           <div className="card-btn">
-            <button>Github</button>
-            <button>Live Demo</button>
+            <a href={project.githubLink}>
+              <button>Github</button>
+            </a>
+            <a href={project.demoLink}>
+              <button>Live Demo</button>
+            </a>
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ const Aboutme = () => {
           </div>
           <div className="cv-btn-wrapper">
             <div className="cv-btn">
-              <a href='' /*download={resume}*/><button>Download CV</button></a>
+              <a href='#' /*download={resume}*/><button>Download CV</button></a>
             </div>
           </div>
         </div>

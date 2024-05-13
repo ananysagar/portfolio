@@ -1,7 +1,7 @@
 import React from "react";
 import "./project.css";
 import Card from "./Card";
-import data from "../assets/ProjectData.json";
+import projectData from "../assets/ProjectData";
 const Project = () => {
   return (
     <div className="project">
@@ -10,7 +10,7 @@ const Project = () => {
           <h1>Projects</h1>
         </div>
         <div className="project-cards">
-          {data.projects.map((project) => {
+          {projectData.map((project) => {
             return <Card key={project.id} project={project} />;
           })}
         </div>
