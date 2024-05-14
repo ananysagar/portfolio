@@ -44,8 +44,7 @@
   text-decoration: none;
   color: #fff;
 }
-.right-navbar ul li a:hover,
-.right-navbar ul li a.active {
+.right-navbar ul li a:hover {
   transform: translateX(5px);
   color: #fff;
   box-shadow: 0 0 10px rgb(246, 2, 2);
