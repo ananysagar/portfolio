@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 import "./contactus.css";
 import { FaGithub } from "react-icons/fa";
@@ -25,11 +27,12 @@ const ContactUs = () => {
       to_name: "Anany Sagar",
       message: message,
     };
-
+    
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
-        console.log("Email sent successfully", response);
+        //console.log("Email sent successfully", response);
+        toast.success("Email sent successfully!");
         setName('');
         setEmail('');
         setMessage('');
@@ -89,6 +92,7 @@ const ContactUs = () => {
               <button className="send-btn" type="submit">
                 Send
               </button>
+              <ToastContainer />
             </form>
           </div>
         </div>
