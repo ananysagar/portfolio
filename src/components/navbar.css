@@ -23,6 +23,12 @@
 .left-navbar .logo {
   font-size: 25px;
   font-weight: 700;
+  cursor: pointer;
+}
+.left-navbar .logo a {
+  text-decoration: none;
+  color: #fff;
+  scroll-behavior: smooth;
 }
 .left-navbar span {
   color: rgb(246, 2, 2);
