@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 import "./contactus.css";
 import { FaGithub } from "react-icons/fa";
@@ -7,6 +8,34 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const ContactUs = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_yfoaq0d";
+    const templateId = "template_ts50xw6";
+    const publicKey = "-venQv-yZPlJDxsMJ";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Anany Sagar",
+      message: message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("Email sent successfully", response);
+        setName('');
+        setEmail('');
+        setMessage('');
+      });
+  };
+
   return (
     <div className="contact">
       <div className="contact-section">
@@ -24,24 +53,26 @@ const ContactUs = () => {
             </p>
           </div>
           <div className="contact-form">
-            <form action="" className="form">
+            <form className="form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <div className="name">
                   <input
                     type="text"
                     placeholder="Name"
-                    name="name"
+                    value={name}
                     className="contact-input"
                     required
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div className="email">
                   <input
                     type="email"
                     placeholder="Email"
-                    name="name"
+                    value={email}
                     className="contact-input"
                     required
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
               </div>
@@ -50,10 +81,14 @@ const ContactUs = () => {
                   name="message"
                   placeholder="Your Message"
                   className="contact-input"
+                  value={message}
                   required
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
-              <button className="send-btn">Send</button>
+              <button className="send-btn" type="submit">
+                Send
+              </button>
             </form>
           </div>
         </div>
