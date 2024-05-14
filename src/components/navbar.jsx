@@ -33,7 +33,7 @@ const Navbar = () => {
     <>
       <div className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="left-navbar">
-          <div className="logo">A Sagar</div>
+          <div className="logo">A S</div>
           <span>.</span>
         </div>
         <div className="right-navbar">
