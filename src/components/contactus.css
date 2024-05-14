@@ -75,6 +75,11 @@
   background: #000;
   border: 1px solid #fff;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.send-btn:hover {
+  background-color: #fff;
+  color: #000; 
 }
 
 .footer-msg {
