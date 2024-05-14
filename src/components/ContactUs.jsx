@@ -80,7 +80,7 @@ const ContactUs = () => {
                 </div>
               </div>
               <div className="msg-area">
-                <textArea
+                <textarea
                   name="message"
                   placeholder="Your Message"
                   className="contact-input"
